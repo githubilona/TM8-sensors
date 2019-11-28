@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LightmeterActivity"></activity>
+        <activity android:name=".SensorListActivity"></activity>
+        <activity android:name=".LightmeterActivity" />
         <activity android:name=".AccelerometerActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
