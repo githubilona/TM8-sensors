@@ -7,6 +7,78 @@
     tools:context=".AccelerometerActivity">
 
     <TextView
+        android:id="@+id/xAccelTextView"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="x: "
+        android:textColor="#009688"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zGravityTextView" />
+
+    <TextView
+        android:id="@+id/yAccelTextView"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:text="y: "
+        android:textColor="#009688"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xAccelTextView" />
+
+    <TextView
+        android:id="@+id/zAccelTextView"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:text="z: "
+        android:textColor="#009688"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yAccelTextView" />
+
+    <TextView
+        android:id="@+id/xGravityTextView"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="x: "
+        android:textColor="#009688"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zValueTextView" />
+
+    <TextView
+        android:id="@+id/yGravityTextView"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:text="y: "
+        android:textColor="#009688"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xGravityTextView" />
+
+    <TextView
+        android:id="@+id/zGravityTextView"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:text="z: "
+        android:textColor="#009688"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yGravityTextView" />
+
+    <TextView
         android:id="@+id/accelerometerTextView"
         android:layout_width="232dp"
         android:layout_height="57dp"
@@ -24,6 +96,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
         android:text="x: "
+        android:textColor="#009688"
         android:textSize="14dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/accelerometerTextView" />
@@ -35,6 +108,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="3dp"
         android:text="y: "
+        android:textColor="#009688"
         android:textSize="14dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/xValueTextView" />
@@ -46,7 +120,38 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="3dp"
         android:text="z: "
+        android:textColor="#009688"
         android:textSize="14dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yValueTextView" />
+
+    <TextView
+        android:id="@+id/rawValuesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Raw values"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accelerometerTextView" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Low pass filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zValueTextView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="High pass filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zGravityTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
