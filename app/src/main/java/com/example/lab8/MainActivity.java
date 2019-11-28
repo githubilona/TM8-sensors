@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Intent accelerometerIntent = new Intent(this, AccelerometerActivity.class);
         startActivity(accelerometerIntent);
     }
+
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {

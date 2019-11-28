@@ -102,8 +102,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
 
     }
-
-    // ?????
+    // ?
     @Override
     protected void onStop() {
         super.onStop();

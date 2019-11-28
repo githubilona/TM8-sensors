@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".LightmeterActivity">
 
+    <TextView
+        android:id="@+id/lightTextView"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Light: "
+        android:textColor="#009688"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lightmeterTextView" />
+
+    <TextView
+        android:id="@+id/lightmeterTextView"
+        android:layout_width="232dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:text="Lightmeter"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
